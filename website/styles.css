@@ -143,9 +143,9 @@ body {
 }
 
 .mini-header__logo-wrap {
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
+  width: 74px;
+  height: 74px;
+  border-radius: 8px;
   overflow: hidden;
   border: 2px solid rgba(255, 252, 248, 0.55);
   background: rgba(250, 246, 240, 0.96);
@@ -154,10 +154,11 @@ body {
   justify-content: center;
 }
 
-.mini-header__logo-pdf {
+.mini-header__logo-img {
   width: 100%;
   height: 100%;
-  border: none;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .mini-header__wordmark {
@@ -429,6 +430,25 @@ body {
   background: var(--color-ink);
   border-color: var(--color-ink);
   color: var(--color-cream);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-ink);
+  border-color: var(--color-ink);
+}
+
+.btn--outline:hover,
+.btn--outline:focus-visible {
+  background: var(--color-ink);
+  color: var(--color-cream);
+}
+
+.hero__actions {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* ----- Cards & grids ----- */
